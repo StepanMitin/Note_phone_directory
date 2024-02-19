@@ -1,0 +1,12 @@
+All recordes:
+
+Count recordes - {{ users|count }}
+{% for user in users %}
+ФИО  - {{ user }}:
+work_place:
+{% for job in user.job_places %}   {{job}}
+Numbers:
+{% for number in user.phones %}    {{number}}
+{% endfor %}
+{% endfor %}====================================
+{% endfor %}
